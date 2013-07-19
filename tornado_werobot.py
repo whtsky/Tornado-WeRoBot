@@ -14,7 +14,7 @@ Links
 * `documentation <https://tornado-werobot.readthedocs.org/>`_
 """
 
-__version__ = '0.1'
+__version__ = '0.2.0'
 __all__ = ['make_handler']
 
 from werobot.robot import BaseRoBot
@@ -55,6 +55,6 @@ def make_handler(robot):
                 self.set_header("Content-Type",
                                 "application/xml;charset=utf-8")
 
-                reply = robot._get_reply(message)
+                reply = robot.get_reply(message)
                 self.write(reply)
     return WeRoBotHandler

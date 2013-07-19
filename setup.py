@@ -1,15 +1,30 @@
+"""
+Tornado-WeRoBot
+---------------
+
+Adds WeRoBot support to Tornado.
+
+:copyright: (c) 2013 by whtsky.
+:license: BSD, see LICENSE for more details.
+
+Links
+`````
+
+* `documentation <https://tornado-werobot.readthedocs.org/>`_
+"""
+
+
 from setuptools import setup
-import tornado_werobot
 
 setup(
     name='Tornado-WeRoBot',
-    version=tornado_werobot.__version__,
+    version='0.2.0',
     url='https://github.com/whtsky/Tornado-WeRoBot',
     license='BSD',
     author='whtsky',
     author_email='whtsky@gmail.com',
     description='Writing WeChat Robot by WeRoBot in Tornado.',
-    long_description=tornado_werobot.__doc__,
+    long_description=__doc__,
     py_modules=['Tornado_werobot'],
     zip_safe=False,
     platforms='any',
